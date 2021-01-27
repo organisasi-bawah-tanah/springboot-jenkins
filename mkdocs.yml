@@ -1,0 +1,8 @@
+site_name: "springboot-jenkins"
+site_description: "springboot-jenkins"
+
+nav:
+  - Introduction: index.md
+
+plugins:
+  - techdocs-core
