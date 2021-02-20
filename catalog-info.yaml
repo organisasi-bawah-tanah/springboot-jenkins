@@ -5,7 +5,7 @@ metadata:
   description: "springboot-jenkins"
   annotations:
     github.com/project-slug: organisasi-bawah-tanah/springboot-jenkins
-    jenkins.io/github-folder: 'backstage/SpringBootPipeline/master'
+    jenkins.io/github-folder: 'backstage-jenkins-project/springboot-jenkins/master'
     backstage.io/techdocs-ref: github:https://github.com/organisasi-bawah-tanah/springboot-jenkins
 spec:
   type: service
