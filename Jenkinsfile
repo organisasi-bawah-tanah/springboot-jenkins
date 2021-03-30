@@ -21,20 +21,5 @@ pipeline {
                 sh 'which java && gradle test && gradle clean build'
             }
         }
-
-        stage ('Send JAR to remote server') {
-            steps {
-                    sh 'scp build/libs/spring-boot-0.0.1-SNAPSHOT.jar ${USER}@${REMOTE_ADDRESS}:/home/ubuntu'
-            }
-        }
-
-        stage ('Deploy JAR to remote server') {
-            steps {
-                sh '''
-                   ssh -f ${USER}@${REMOTE_ADDRESS} "nohup java -jar /home/${USER}/spring-boot-0.0.1-SNAPSHOT.jar &"
-                '''
-                
-            }
-        }
     }
 }
